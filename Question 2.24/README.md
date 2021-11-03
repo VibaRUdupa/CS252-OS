@@ -17,9 +17,10 @@ Since Windows systems do not provide such a tool, you will have to trace through
 1. [Code.c](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Code.c) - Program to copy content from source to destination file written in C programming language using Windows API.
 2. [Solution](https://github.com/VibaRUdupa/CS252-OS/tree/main/Question%202.24/Solution) - Folder contains all the solution files and system call traces.
    1. [reading.txt](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/reading.txt) - Source text file.
-   2. [writing.txt](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/writing.txt) - Destination text file created by the program.
-   3. [log.apmx86](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/log.apmx86) - Log output of the API Monitor
-   4. [Log_File.csv](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/Log_File.csv) - Log ouput represented in a CSV format
+   2. [Code.exe](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/Code.exe) - Compiled program for system call tracing.
+   3. [writing.txt](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/writing.txt) - Destination text file created by the program.
+   4. [log.apmx86](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/log.apmx86) - Log output of the API Monitor
+   5. [Log_File.csv](https://github.com/VibaRUdupa/CS252-OS/blob/main/Question%202.24/Solution/Log_File.csv) - Log ouput represented in a CSV format
 
 # References for Source Code
 
