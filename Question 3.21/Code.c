@@ -1,31 +1,39 @@
+// VIBA R UDUPA
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <sys/types.h>
 
-
+// User Defined function declaration
 void collatz(int i);
 
 int main()
 {
   char c,num[10];
   int n,len,i;
+  
   while(1)
   {
     printf("\nWhat is your number? (Enter 'q' to quit) : ");
-    gets(num);//Read input from console
-    if(strcmp(num,"q")==0)// Quit if input is q
+    gets(num);
+    
+    if(strcmp(num,"q")==0)
     {
+      // Quit if input is 'q'
       exit(0);
     }
-    n=atoi(num);// String to number conversion
-    if(n>2)// Wrong input checking
+    
+    n = atoi(num); // String to integer conversion
+    if(n>2)
     {
-        collatz(n);// Function calling
+        // Valid input
+        collatz(n);
     }
     else
     {
+        // Invalid input
         printf("enter valid input...\n");
     }
 
@@ -33,24 +41,32 @@ int main()
   return 0;
 }
 
-void collatz(int i)// Called Function
+void collatz(int i)
 {
+  // Process identification variable declaration.
+  // Necessary headerfile - sys/types.h
+  
   pid_t child_pid, wpid;
   int status = 0;
 
   if ((child_pid = fork()) == 0)// Child process creation
   {
+    // The control is with newly created child process.
+    // Only the child will execute the below block of code.
+    
       while(i != 1)
       {
+        // The series has not yet reached the end.
+        
           printf("%d\t", i);
           if(i%2 == 0)
           {
-              // If n is even
+              // n is even
               i /= 2;
           }
           else
           {
-              // if n is odd
+              // n is odd
               i = 3*i + 1;
           }
        }
