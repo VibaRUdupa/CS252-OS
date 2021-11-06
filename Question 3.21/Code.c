@@ -1,4 +1,8 @@
-// VIBA R UDUPA
+// CS252 Operating systems minor
+// Solution to Question 3.21
+// Program to print the Collatz conjecture series.
+// Viba R Udupa
+// 191ME291
 
 #include <stdio.h>
 #include <unistd.h>
@@ -73,8 +77,12 @@ void collatz(int i)
        printf("1\n");
        exit(1);
    }
+  
    while ((wpid = wait(&status)) > 0)
    {
+     //After the child process is terminated, the wait() returns the pid of the terminated child process.
+     // The parent has to wait till the chil terminates execution.
+     
       printf("Child process exited\n");
    }
 return;
