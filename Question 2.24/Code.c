@@ -11,7 +11,7 @@ int main()
 {
   // Variable declaration
   FILE *fptr1, *fptr2;
-  char file1[200], file[200], c;
+  char file1[200], file2[200], c;
 
   // Input file name to be read   
   printf("\n Please enter the file name to open for reading: ");
